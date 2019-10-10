@@ -1,9 +1,9 @@
 package org.d3ifcool.myapplication;
 
 public enum Mahasiswa {
-    user1("6706174098", "aseng", "80", "72"),
+    user1("6706174098", "aseng", "", "72"),
     user2("6706170026", "rolin", "90", "89"),
-    user3("6706174111", "depi", "92", "95");
+    user3("6706170026", "Devi", "-abc", "89");
 
     private String nim;
     private String nama;

@@ -4,6 +4,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
 
@@ -22,12 +25,12 @@ public class MainActivityTest {
 
     @Test
     public void simpleTestDataDriven() {
-        onView(withId(R.id.editText_nim)).perform(typeText(Mahasiswa.user1.getNim()));
-        onView(withId(R.id.editText_nama)).perform(typeText(Mahasiswa.user1.getNama()));
-        onView(withId(R.id.editText_uts)).perform(typeText(Mahasiswa.user1.getUts()));
-        onView(withId(R.id.editText_uas)).perform(typeText(Mahasiswa.user1.getUas()));
+            onView(withId(R.id.editText_nim)).perform(typeText(Mahasiswa.user1.getNim()));
+            onView(withId(R.id.editText_nama)).perform(typeText(Mahasiswa.user1.getNama()));
+            onView(withId(R.id.editText_uts)).perform(typeText(Mahasiswa.user1.getUts()));
+            onView(withId(R.id.editText_uas)).perform(typeText(Mahasiswa.user1.getUas()));
 
-        onView(withId(R.id.button_test)).perform(click());
+            onView(withId(R.id.button_test)).perform(click());
     }
 
     @Test
